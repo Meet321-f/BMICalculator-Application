@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI Application</string>
+    <string name="select_height">Select Height</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+</resources>

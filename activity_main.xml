@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Gender Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgFemale"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/female"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            android:background="@drawable/normal_border"/>
+
+        <ImageView
+            android:id="@+id/imgMale"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_3"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/normal_border"/>
+    </LinearLayout>
+
+    <!-- Age Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Age"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <NumberPicker
+        android:id="@+id/numberPickerAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Weight Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Weight (KG)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <NumberPicker
+        android:id="@+id/numberPickerWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/blue_button"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

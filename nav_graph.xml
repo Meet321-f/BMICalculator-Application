@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myapplication.MainFragment"
+        android:label="Select Gender"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_main_to_maleHeight"
+            app:destination="@id/heightSelectMaleFragment" />
+        <action
+            android:id="@+id/action_main_to_femaleHeight"
+            app:destination="@id/heightSelectFemaleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/heightSelectMaleFragment"
+        android:name="com.example.myapplication.HeightSelectMaleFragment"
+        android:label="Height Male"
+        tools:layout="@layout/activity_heightselect_male">
+        <action
+            android:id="@+id/action_maleHeight_to_bmiResult"
+            app:destination="@id/bmiResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/heightSelectFemaleFragment"
+        android:name="com.example.myapplication.HeightSelectFemaleFragment"
+        android:label="Height Female"
+        tools:layout="@layout/activity_heightselect_female">
+        <action
+            android:id="@+id/action_femaleHeight_to_bmiResult"
+            app:destination="@id/bmiResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bmiResultFragment"
+        android:name="com.example.myapplication.BMIResultFragment"
+        android:label="BMI Result"
+        tools:layout="@layout/activity_bmi_result" />
+</navigation>

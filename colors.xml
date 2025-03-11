@@ -1,0 +1,6 @@
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- Pick a blue you like for text and button backgrounds -->
+    <color name="blue">#2196F3</color>
+</resources>
